@@ -1,1 +1,224 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6fb;
+            color: #222;
+        }
+
+        header {
+            background: #151b35;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #00d4ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #151b35, #354b85);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00d4ff;
+            color: #151b35;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #253c78;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 220px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        .card h3 {
+            color: #354b85;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        #contact {
+            background: #e5eaf7;
+        }
+
+        footer {
+            background: #151b35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Hello, I'm <span>Sudheer!</span></h1>
+    <p>Engineering Student | Web Developer | Programmer</p>
+    <a href="#about" class="btn">Explore My Website</a>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an engineering student interested in programming,
+        web development and modern technologies.
+        I enjoy learning new skills and building creative projects.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Web Page Structure</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Web Page Designing</p>
+        </div>
+        <div class="card">
+            <h3>Python</h3>
+            <p>Programming</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Web Interactivity</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Library Management</h3>
+            <p>Managing books and student records.</p>
+        </div>
+        <div class="card">
+            <h3>To-Do Application</h3>
+            <p>A simple task management application.</p>
+        </div>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal website using HTML and CSS.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sudheer@example.com</p>
+    <p>GitHub: github.com/nanubalasudheer-wq</p>
+    <br>
+    <a href="mailto:sudheer@example.com" class="btn">
+        Send Email
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Sudheer | My Portfolio Website</p>
+</footer>
+
+</body>
+</html>
+
